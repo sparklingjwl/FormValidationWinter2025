@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Member Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="/FormValidation.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="banner.png" alt="Black Banner" class="banner-image" />
+        <h1 class="banner-title">Welcome to Member Registration</h1>
+    </div>
+    <div class="form-container">
+        <h2>Member Registration</h2>
+        <form id="registrationForm" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" class="form-input" placeholder="First Name" required autofocus />
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" class="form-input" placeholder="Last Name" required />
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" class="form-input" placeholder="Address" required />
+                <br>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" class="form-input" placeholder="City" required />
+                <br>
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" name="postalCode" id="postalCode" class="form-input" placeholder="A0A0A0" required />
+                <br>
+                <label for="province">Province:</label>
+                <select name="province" id="province" class="form-input" required>
+                    <option value="">Select Province</option>
+                    <option value="QC">Quebec (QC)</option>
+                    <option value="ON">Ontario (ON)</option>
+                    <option value="MN">Manitoba (MN)</option>
+                    <option value="SK">Saskatchewan (SK)</option>
+                    <option value="AB">Alberta (AB)</option>
+                    <option value="BC">British Columbia (BC)</option>
+                </select>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" class="form-input" placeholder="Age" required />
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" class="form-input" placeholder="Enter Username" required />
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="form-input" placeholder="Enter a Password" required />
+                <br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" class="form-input" placeholder="Confirm Password" required />
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-input" placeholder="example@domain.com" required />
+                <br>
+            </fieldset>
+            <div class="button-container">
+                <button type="submit">Register Now</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+        <footer>
+            <p>&copy; 2025 Kelly Burden ID#301495959 Assignment 4 Comp125-404. All rights reserved. </p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
